@@ -1,0 +1,40 @@
+=== Frontend Checklist ===
+
+1. Authentication
+   - [ ] Google Sign-In (Firebase Auth)
+   - [ ] Facebook Sign-In (Firebase Auth)
+   - [ ] Store the user token (Bearer) in localStorage/sessionStorage
+   - [ ] Include token in Authorization headers for all backend requests
+
+2. Product Pages
+   - [ ] Display list of products (Regular Pastil, Pastil/Wegg, Pastil Hotdog)
+   - [ ] Fetch products from backend API
+   - [ ] Show price, description, and stock
+   - [ ] Add “Add to Cart” button for each product
+
+3. Cart & Order
+   - [ ] Show cart items
+   - [ ] Adjust quantity (with validation for stock)
+   - [ ] “Place Order” button sends items to backend with token
+   - [ ] Show order success or error messages
+
+4. Order History
+   - [ ] Fetch user orders from backend `/orders`
+   - [ ] Display order details and items
+   - [ ] Show order status (Pending, Paid, Cancelled)
+
+5. Payment (for now Cash Only)
+   - [ ] Show payment method selection (Cash, GCash if implemented later)
+   - [ ] Optional: Upload screenshot for GCash proof
+   - [ ] Send payment info to backend `/payments` API
+
+6. Status Updates (Admin Only)
+   - [ ] Show “Mark as Paid” button for admins
+   - [ ] Show “Cancel Order” button for users on pending orders
+   - [ ] Confirm action with backend PATCH request
+
+7. Error Handling & UX
+   - [ ] Handle token expiry / invalid token
+   - [ ] Handle insufficient stock
+   - [ ] Show loader/spinner while fetching data
+   - [ ] Show clear success/error messages for all actions

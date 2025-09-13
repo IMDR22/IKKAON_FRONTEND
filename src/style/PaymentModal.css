@@ -1,0 +1,92 @@
+.payment-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .payment-modal-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .payment-modal-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .payment-modal-container .payment-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+  
+  .payment-modal-container .payment-option input[type="radio"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+  }
+  
+  .payment-modal-container .payment-option label {
+    font-size: 1rem;
+    color: #555;
+    cursor: pointer;
+  }
+  
+  .payment-modal-container .payment-confirmation {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: #f9f9f9;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .payment-modal-container .payment-modal-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  
+  .payment-modal-container .payment-modal-footer button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 1rem;
+  }
+  
+  .payment-modal-container .payment-modal-footer .confirm-button {
+    background: #4caf50;
+    color: white;
+  }
+  
+  .payment-modal-container .payment-modal-footer .confirm-button:hover {
+    background: #45a049;
+  }
+  
+  .payment-modal-container .payment-modal-footer .close-button {
+    background: #f44336;
+    color: white;
+  }
+  
+  .payment-modal-container .payment-modal-footer .close-button:hover {
+    background: #e53935;
+  }
+  
