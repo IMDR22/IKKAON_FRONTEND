@@ -1,5 +1,5 @@
 import React from "react";
-import "../style/CartReviewModal.css"; // Ensure you have the corresponding CSS file
+import "../style/cartReviewModal.css"; // Ensure you have the corresponding CSS file
 
 const CartReviewModal = ({ cart, onClose, onProceedToPayment, onRemoveFromCart }) => {
   // Calculate the total price of the cart

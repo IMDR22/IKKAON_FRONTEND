@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Swal from "sweetalert2";
 import GcashQrImage from "../assets/gcash-qr.jpg";
-import '../style/paymentModal.css';
+import '../style/PaymentModal.css';
 
 const PaymentModal = ({ onClose, onConfirmPayment, isSubmitting = false }) => {
   const [selectedMethod, setSelectedMethod] = useState("");
