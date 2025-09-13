@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import "../style/HomePage.css";
+import "../style/homePage.css";
 import logo from "../assets/MINI_LOGO.png";
 import regular from "../assets/regular_pastil.jpg";
 import pastilEgg from "../assets/pastil_egg.jpg";
