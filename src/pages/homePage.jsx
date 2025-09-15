@@ -174,7 +174,6 @@ const placeOrder = async (method) => {
           headers: { Authorization: `Bearer ${token}` },
         }
       );
-      console.log("Payment record created:", response.data);
     } catch (error) {
       console.error("Error creating payment:", error);
       throw error; 
