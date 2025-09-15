@@ -52,7 +52,6 @@ const HomePage = () => {
   }, [navigate]);
 
   const handleAddToCart = (product) => {
-    console.log('Prev Cart:', cart);  // Log the current state of the cart
     setCart((prevCart) => {
       const existingProduct = prevCart.find((item) => item.product_id === product.product_id);
       if (existingProduct) {
@@ -144,10 +143,6 @@ const placeOrder = async (method) => {
     // Close modal only after success
     setIsPaymentModalOpen(false);
 
-    // Optional: nice success message
-    // If you use SweetAlert2 here, import Swal at top of HomePage.jsx
-    // (You already use it in PaymentModal)
-    // eslint-disable-next-line no-undef
     Swal.fire({
       icon: "success",
       title: "Order Confirmed",
@@ -173,7 +168,7 @@ const placeOrder = async (method) => {
         `${BACKEND_API}/payments`,
         {
           order_id: orderId,
-          method, // use the argument, not state
+          method, 
         },
         {
           headers: { Authorization: `Bearer ${token}` },

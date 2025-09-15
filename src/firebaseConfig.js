@@ -28,10 +28,9 @@ const firebaseConfig = {
   databaseURL: FIREBASE_DATABASE_URL,
 };
 
-// Initialize Firebase
+
 const app = initializeApp(firebaseConfig);
 
-// Initialize and export Firebase services
 export const db = getFirestore(app);
 export const auth = getAuth(app);
 export const provider = new GoogleAuthProvider();

@@ -1,5 +1,5 @@
 import React from "react";
-import "../style/cartReviewModal.css"; // Ensure you have the corresponding CSS file
+import "../style/cartReviewModal.css"; 
 
 const CartReviewModal = ({ cart, onClose, onProceedToPayment, onRemoveFromCart }) => {
   // Calculate the total price of the cart
@@ -16,7 +16,7 @@ const CartReviewModal = ({ cart, onClose, onProceedToPayment, onRemoveFromCart }
             <li>Your cart is empty!</li>
           ) : (
             cart.map((item) => {
-              const price = Number(item.price); // Ensure price is a number
+              const price = Number(item.price); 
               return (
                 <li key={item.product_id} className="cart-item">
                   <div className="cart-item-info">

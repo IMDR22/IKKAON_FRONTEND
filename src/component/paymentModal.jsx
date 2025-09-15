@@ -16,7 +16,7 @@ const PaymentModal = ({ onClose, onConfirmPayment, isSubmitting = false }) => {
       });
       return;
     }
-    onConfirmPayment(selectedMethod); // 🔑 send chosen method up
+    onConfirmPayment(selectedMethod); 
   };
 
   const renderPaymentDetails = () => {
